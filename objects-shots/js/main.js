@@ -2,7 +2,7 @@
 fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-      console.log(data.drinks[2])
+      console.log(data.drinks[3])
       document.querySelector('h2').innerText = data.drinks[1].strDrink
       document.querySelector('img').src = data.drinks[1].strDrinkThumb
       document.querySelector('.ingredients1').innerText = data.drinks[1].strIngredient1
